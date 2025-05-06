@@ -6,10 +6,23 @@
 
 :root {
   --padding-small: 10px;
+  --bg-light-blue-color: #add8e6;
+  --bg-nav-header-color: #daa520;
+  --border-dashed: 2px dashed black;
+  --bg-jumbo-color: #00008b;
+  --bg-jumbo-desc-color: #ee82ee;
+  --bg-box-blue-color: #1e90ff;
+  --bg-box-pink-color: #ffc0cb;
+  --bg-container-color: #d3d3d3;
+  --bg-footer-color: #23272a;
+  --bg-footer-nav-color: #7fffd4;
+  --bg-small-box-footer-color: #20b2aa;
+  --bg-big-box-footer-color: #f08080;
+  --bg-nav-footer-elemets-color: #ffb6c1;
+  --font-size: 20px;
 }
 
-/* start debug */
-.debug {
+/* .debug {
   #header_site {
     border: 2px dashed black;
     background-color: aqua;
@@ -61,14 +74,11 @@
   }
   .end_footer {
     background-color: aqua;
-    height: 150px;
-    display: flex;
-    justify-content: center;
   }
   .nav_footer {
     background-color: coral;
   }
-}
+} */
 /* end debug */
 /* start header */
 #header_site {
@@ -76,27 +86,36 @@
   justify-content: center;
   align-items: center;
   height: 100px;
+  background-color: var(--bg-light-blue-color);
 }
 
 .nav_site {
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  margin: 0 auto;
+  min-width: 50%;
+  background-color: var(--bg-nav-header-color);
+  font-size: var(--font-size);
 }
 .logo {
   width: 20%;
   padding: var(--padding-small);
+  border: var(--border-dashed);
 }
 .multi_link {
   width: 60%;
   text-align: center;
   padding: var(--padding-small);
+  border: var(--border-dashed);
+}
+.multi_link a {
+  text-decoration: none;
+  color: black;
 }
 .login {
   width: 20%;
   text-align: right;
   padding: var(--padding-small);
+  border: var(--border-dashed);
 }
 /* end header */
 
@@ -106,10 +125,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-jumbo-color);
 }
 .box_desc_jumbo {
   height: 70%;
   width: 40%;
+  background-color: var(--bg-jumbo-desc-color);
+  border: var(--border-dashed);
 }
 .container_white {
   height: 800px;
@@ -125,17 +147,20 @@
   display: flex;
 }
 .box_blue {
-  background-color: blue;
+  background-color: var(--bg-box-blue-color);
   width: 60%;
   height: 100%;
+  border: var(--border-dashed);
 }
 .small_box_pink {
-  background-color: pink;
+  background-color: var(--bg-box-pink-color);
   height: 100%;
   width: 40%;
+  border: var(--border-dashed);
 }
 
 .container_grey {
+  background-color: var(--bg-container-color);
   height: 800px;
   width: 100%;
   display: flex;
@@ -152,6 +177,7 @@
 }
 
 .big_container_grey {
+  background-color: var(--bg-container-color);
   height: 1200px;
   width: 100%;
   display: flex;
@@ -168,9 +194,11 @@
   background-color: green;
   height: 80%;
   width: 100%;
+  border: var(--border-dashed);
 }
 
 .container_box_footer {
+  background-color: var(--bg-footer-color);
   height: 800px;
   width: 100%;
   display: flex;
@@ -186,19 +214,23 @@
 }
 
 .small_box_green {
-  background-color: green;
+  background-color: var(--bg-small-box-footer-color);
   height: 100%;
-  width: 15%;
+  width: 17.5%;
   border: 2px dashed white;
 }
 
 .box_rose {
-  background-color: blue;
-  width: 40%;
+  background-color: var(--bg-big-box-footer-color);
+  width: 30%;
   height: 100%;
+  border: var(--border-dashed);
 }
 
 .end_footer {
+  background-color: var(--bg-footer-color);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -206,9 +238,23 @@
 }
 
 .nav_footer {
+  background-color: var(--bg-footer-nav-color);
   height: 50%;
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: var(--font-size);
+}
+
+.logo_footer {
+  border: var(--border-dashed);
+  background-color: var(--bg-nav-footer-elemets-color);
+  padding: var(--padding-small);
+}
+
+.footer_button {
+  border: var(--border-dashed);
+  background-color: var(--bg-nav-footer-elemets-color);
+  padding: var(--padding-small);
 }
