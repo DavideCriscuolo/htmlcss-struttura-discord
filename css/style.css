@@ -4,6 +4,58 @@
   box-sizing: border-box;
 }
 
+:root {
+  --padding-small: 10px;
+}
+
+/* start debug */
 .debug {
-  background-color: blue;
+  #header_site {
+    border: 2px dashed black;
+    background-color: aqua;
+  }
+  .nav_site {
+    background-color: yellow;
+  }
+
+  .logo {
+    border: 2px dashed black;
+  }
+
+  .multi_link {
+    border: 2px dashed black;
+  }
+  .login {
+    border: 2px dashed black;
+  }
+}
+/* end debug */
+
+/* general */
+#header_site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.nav_site {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+.logo {
+  width: 20%;
+  padding: var(--padding-small);
+}
+.multi_link {
+  width: 60%;
+  text-align: center;
+  padding: var(--padding-small);
+}
+.login {
+  width: 20%;
+  text-align: right;
+  padding: var(--padding-small);
 }
