@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* variabili per i valori piu' usati */
 :root {
   --padding-small: 10px;
   --bg-light-blue-color: #add8e6;
@@ -78,8 +78,9 @@
   .nav_footer {
     background-color: coral;
   }
-} */
+} 
 /* end debug */
+
 /* start header */
 #header_site {
   display: flex;
@@ -196,7 +197,9 @@
   width: 100%;
   border: var(--border-dashed);
 }
+/* end main */
 
+/* start footer */
 .container_box_footer {
   background-color: var(--bg-footer-color);
   height: 800px;
@@ -258,3 +261,4 @@
   background-color: var(--bg-nav-footer-elemets-color);
   padding: var(--padding-small);
 }
+/* end footer */
