@@ -50,6 +50,12 @@
   .small_box_pink {
     border: 2px dashed black;
   }
+  .big_container_grey {
+    background-color: grey;
+  }
+  .container_grey {
+    background-color: grey;
+  }
 }
 /* end debug */
 
@@ -120,11 +126,36 @@
 }
 
 .container_grey {
-  background-color: grey;
   height: 800px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container_duo_box_reverse {
+  height: 80%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
   flex-direction: row-reverse;
+}
+
+.big_container_grey {
+  height: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big_container_box {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.box_green {
+  background-color: green;
+  height: 80%;
+  width: 100%;
 }
