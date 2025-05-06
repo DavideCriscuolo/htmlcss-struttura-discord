@@ -28,10 +28,20 @@
   .login {
     border: 2px dashed black;
   }
+
+  .jumbo {
+    background-color: blueviolet;
+  }
+
+  .box_desc_jumbo {
+    background-color: chartreuse;
+    border: 2px dashed black;
+  }
 }
 /* end debug */
 
-/* general */
+/* start header */
+
 #header_site {
   display: flex;
   justify-content: center;
@@ -58,4 +68,17 @@
   width: 20%;
   text-align: right;
   padding: var(--padding-small);
+}
+/* end header */
+
+/* start main */
+.jumbo {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_desc_jumbo {
+  height: 70%;
+  width: 40%;
 }
